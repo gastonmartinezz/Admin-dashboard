@@ -1,0 +1,43 @@
+:root {
+    --color: #1992d4;
+    --secondaryColor: #F0B429;
+    --bckgroundMain: #E2E8F0;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    border: 2px red solid;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: var(--color);
+    color: white;
+}
+
+.main {
+    width: 80%;
+}
+
+li {
+    display: flex;
+    fill: white;
+    gap: 20px;
+    height: 4vh;
+}
+
+svg {
+    width: 2vw;
+    height: 6.5vh;
+}
+
+.bottom-ul {
+    margin-top: 5vh;
+}
