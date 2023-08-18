@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@1,6..12,200&family=Quicksand:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title>Dashboard</title>
 </head>
-<body>*
+<body>
     <div class="container">
         <div class="sidebar">
             <ul class="dashboard-ul">
@@ -61,18 +61,64 @@
         </div>
         <div class="main">
             <div class="nav-search">
+                <div class="top-nav">
+                    <div class="search-div">
+                        <button class="search" id="search-icon"><img src="imgs/magnify.png" alt="search-icon"></button>
+                        <input class="search" id="search-input" type="text">
+                    </div>
+    
+                    <div class="user">
+                        <button id="alerts"><img src="imgs/bell-ring.png" alt="notifiacion-icon"></button>
+                        <button id="profile-image"><img src="imgs/account.png" alt="account-icon"></button>
+                        <button class="profile"><h3>Gaston Martinez</h3></button>
+                    </div>
+                </div>
+                
+                <div class="actions">
+                    <div class="greet">
+                        <img src="imgs/account.png" alt="">
+                        <div class="text">
+                            <p>Hi there,</p>
+                            <h3>Gaston Martinez (@gaston)</h3>
+                        </div>
+                    </div>
+                    <div class="upload">
+                        <button>New</button>
+                        <button>Upload</button>
+                        <button>Share</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="projects">
+                    <h3 id="main-title">Your Projects</h3>
+                    <div class="left">
+                        <div class="grid"></div>
+                        <div class="grid"></div>
+                        <div class="grid"></div>
+                        <div class="grid"></div>
+                        <div class="grid"></div>
+                        <div class="grid"></div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="announcements">
+                        <h3>Announcements</h3>
+                        <div class="grid-announcements">
+                            <div class="grid-announcementsInner top"></div>
+                            <div class="grid-announcementsInner"></div>
+                            <div class="grid-announcementsInner bot"></div>
+                        </div>
+                    </div>
+                    <div class="trending">
+                        <h3>Trending</h3>
 
+                    </div>
+                </div>
             </div>
-            <div class="projects">
-    
-            </div>
-            <div class="announcements">
-    
-            </div>
-            <div class="trending">
-    
-            </div>
+
         </div>
     </div>
 </body>
+<script src="script.js"></script>
 </html>
