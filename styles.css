@@ -164,14 +164,6 @@ svg {
     margin-top: 3%;
 }
 
-#announcements {
-    background-color: var(--bckgroundMain);
-    margin-top: 3%;
-    height: 100%;
-    border: 2px red solid;
-    margin: auto;
-}
-
 .bottom {
     background-color: var(--bckgroundMain);
     display: flex;
@@ -189,12 +181,13 @@ svg {
     width: 100%;
     height: 88%;
     display: grid;
+    grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
 }
 
 .right {
-    border: 2px peachpuff solid;
     width: 30%;
+    margin-right: 5%;
 }
 
 .grid {
@@ -226,23 +219,44 @@ svg {
     font-weight: bolder;
 }
 
-.announcements {
+#announcements, #trending {
     margin-left: 3%;
     margin-right: 3%;
-    height: 50%;
-}
-
-.grid-announcements {
-    display: grid;
-    height: 70%;
-}
-
-.grid-announcementsInner {
     background-color: white;
-    border: none;
+    border-radius: 10px;
+    display: grid;
+
 }
 
-.trending {
-    border: 2px blue solid;
-    height: 47%;
+#h3announcements, #h3trending {
+    margin-left: 5%;
+}
+
+#h3trending {
+    margin-top: 20%;
+}
+#announcements {
+    height: 40%;
+    grid-template-rows: 140px 20px 100px;
+}
+
+#trending {
+    height: 30%;
+    grid-template-rows: 100px 20px 100px;
+}
+
+.announcementsDiv {
+    margin: 4%;
+    align-items: top;
+}
+
+.divider {
+    height: 1px;
+    background-color: rgb(219, 221, 231);
+    width: 100%;
+    margin: 4%;
+}
+
+.trendingDiv {
+    margin: 4%
 }
